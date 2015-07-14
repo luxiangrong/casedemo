@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>case demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/OwlCarousel2/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="iphone iphone-6 iphone-6-gold">
+            <div class="iphone-mask"></div>
+            <div class="viewport">
+                <div class="owl-carousel">
+                    <div class="item"><img src="images/pic02.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic03.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic04.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic05.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic02.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic03.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic04.jpg" alt=""></div>
+                    <div class="item"><img src="images/pic05.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/OwlCarousel2/dist/owl.carousel.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        items: 1,
+        nav: false,
+        autoHeight: true
+    })
+
+    $('.viewport').mCustomScrollbar({
+        autoDraggerLength: true
+    });
+    </script>
+</body>
+
+</html>
